@@ -21,3 +21,44 @@
 
     --font-primary: 'Playfair Display', serif;
 }
+
+/* GLOBAL STYLES (mobile first/small) */
+body {
+    font-family: var(--font-primary);
+    background-color: var(--soft-white);
+    color: var(--dark-charcoal);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--midnight-blue);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 1rem;
+}
+
+.tagline {
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+nav {
+    background-color: var(--champagne-gold);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 1rem;
+}
