@@ -158,3 +158,21 @@ footer a {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* MEDIA QUERY (large) */
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* MEDIA QUERY (xl) */
+@media (min-width: 1200px) {
+    .gallery-grid {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
