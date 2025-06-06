@@ -62,3 +62,23 @@ nav li {
     display: inline-block;
     margin: 0 1rem;
 }
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--dark-charcoal);
+}
+
+section {
+    margin: 2rem 0;
+}
+
+h1, h2, h3 {
+    color: var(--midnight-blue);
+    margin-bottom: 1rem;
+}
+
+.cards {
+    display: grid;
+    gap: 1.5rem;
+}
