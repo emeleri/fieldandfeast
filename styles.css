@@ -101,18 +101,36 @@ h1, h2, h3 {
 
 .cards {
     display: grid;
-    gap: 1.5rem;
-    max-width: 1000px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1150px;
     margin: 2rem auto;
 }
 
 .card {
     background-color: var(--olive-green);
     color: white;
-    padding: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    color: white;
+}
+
+@media (min-width: 900px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr); /* <-- 1fr instead of auto */
+    }
+    
+    .card:nth-child(3) {
+        grid-column: span 2; /* <-- cleaner */
+        max-width: 100%;     /* <-- allow it to stretch full width */
+    }
 }
 
 .large-card {
