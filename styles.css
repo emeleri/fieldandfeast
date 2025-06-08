@@ -57,7 +57,7 @@ header {
 nav {
     background-color: var(--champagne-gold);
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 nav ul {
@@ -66,7 +66,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    margin: 0 6rem;
+    margin: 0 10rem;
 }
 
 .divider {
@@ -74,13 +74,14 @@ nav li {
     height: 2px;
     background-color: var(--champagne-gold); 
     margin: 2rem auto;
-    width: 1200px; 
+    width: 1150px; 
 }
 
 nav a {
     text-decoration: none;
     font-weight: bold;
     color: var(--dark-charcoal);
+    font-size: 1.5rem;
 }
 
 .site-title {
@@ -223,13 +224,22 @@ footer a {
 /* MEDIA QUERY (large) */
 @media (min-width: 900px) {
     .cards {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+
+    .card:nth-child(3) {
+        grid-column: span 2;
+        max-width: 100%;
     }
 
     .gallery-grid {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 
 /* MEDIA QUERY (xl) */
 @media (min-width: 1200px) {
@@ -237,3 +247,11 @@ footer a {
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
+.section-divider {
+    height: 2px;
+    width: 1150px;
+    background-color: var(--champagne-gold);
+    margin: 2rem auto;
+}
+
